@@ -88,5 +88,62 @@
       grid-row: 10/59;
       background-color: rgba(78, 74, 74, 0.815);
       border: 5px solid rgb(255, 255, 255);
+      
 }
 
+/*MODAL1*/
+#m1{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;   
+}
+.modal1{
+      height: 80%;
+      width: 60%;
+      background-color: rgba(153, 153, 153, 0.596);
+}
+/*MODAL2*/
+#m2{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;   
+}
+.modal2{
+      height: 80%;
+      width: 60%;
+      background-color: rgba(153, 153, 153, 0.596);
+}
+/*MODAL3*/
+#m3{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;   
+}
+.modal3{
+      height: 80%;
+      width: 60%;
+      background-color: rgba(153, 153, 153, 0.596);
+}
+/*MODAL4*/
+#m4{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;   
+}
+.modal4{
+      height: 80%;
+      width: 60%;
+      background-color: rgba(153, 153, 153, 0.596);
+}
+.show{
+      pointer-events: auto;
+      display: flex;
+}
