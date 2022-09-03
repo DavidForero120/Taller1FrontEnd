@@ -50,7 +50,7 @@
       flex-wrap: wrap;
       grid-gap: 5% !important;   
 }
-#ejer1, #ejer3{
+#ejer1, #ejer3, #ejer5{
       background-color: darkorange;
       color: white;
       height: 50%;
@@ -85,40 +85,65 @@
 /*PESTAÑA RETOS*/
 #pestana{
       grid-column: 1/61;
-      grid-row: 10/59;
+      grid-row: 10/60;
       background-color: rgba(78, 74, 74, 0.815);
       border: 5px solid rgb(255, 255, 255);
       
 }
-
 /*MODAL1*/
-#m1{
+.m1{
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       display: none;   
+}
+.cambio1{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;   
 }
 .modal1{
       height: 80%;
-      width: 60%;
+      width: 80%;
       background-color: rgba(153, 153, 153, 0.596);
 }
+.ret{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3%;
+}
+.texto{
+      display: flex;
+      flex-direction: column;
+      margin-top: 5%;
+}
 /*MODAL2*/
-#m2{
+.m2{
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       display: none;   
 }
+.cambio2{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;   
+}
 .modal2{
       height: 80%;
-      width: 60%;
+      width: 80%;
       background-color: rgba(153, 153, 153, 0.596);
 }
 /*MODAL3*/
-#m3{
+.m3{
       height: 100%;
       display: flex;
       justify-content: center;
@@ -127,23 +152,53 @@
 }
 .modal3{
       height: 80%;
-      width: 60%;
+      width: 80%;
       background-color: rgba(153, 153, 153, 0.596);
 }
+.cambio3{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;   
+}
 /*MODAL4*/
-#m4{
+.m4{
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       display: none;   
 }
+.cambio4{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;   
+}
 .modal4{
       height: 80%;
-      width: 60%;
+      width: 80%;
       background-color: rgba(153, 153, 153, 0.596);
 }
-.show{
-      pointer-events: auto;
+/*MODAL5*/
+.m5{
+      height: 100%;
       display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;   
+}
+.cambio5{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;   
+}
+.modal5{
+      height: 80%;
+      width: 80%;
+      background-color: rgba(153, 153, 153, 0.596);
 }
