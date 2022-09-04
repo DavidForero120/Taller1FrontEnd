@@ -149,16 +149,25 @@
       font-size: 1.3em;
       height: 2em;
       font-family: 'Noto Sans Display', sans-serif;
-}#men{
-      color: white;
-      font-size: 1.3em;
-      font-family: 'Noto Sans Display', sans-serif;
-}#close{
+}label{
+            margin-top: 2%;
+            color: white;
+            font-size: 1.3em;
+            font-family: 'Noto Sans Display', sans-serif;
+      
+}
+#close{
       margin-right: -100%;
-      margin-top: -47.5%;
+      margin-top: -42.5%;
+      color: white;
+      font-size: 2em;
+} 
+#close2, #close3, #close4, #close5{
       color: white;
       font-size: 2em;
 }
+
+
 /*MODAL2*/
 .m2{
       height: 100%;
@@ -178,6 +187,19 @@
       height: 80%;
       width: 80%;
       background-color: rgba(153, 153, 153, 0.596);
+}
+#cal{
+      margin-top: 5%;
+}
+.form-select{
+      margin-top: 3%;
+      width: 25% !important;
+}
+.form-control{
+      margin-top: 5%;
+      width: 25% !important;
+}#close2{
+      margin-top: 5%;
 }
 /*MODAL3*/
 .m3{
@@ -199,6 +221,13 @@
       align-items: center;
       display: flex;   
 }
+#lado1, #lado2, #lado3{
+      margin-top: 1%;
+}#close3{
+      margin-top: 3%;
+}#trig{
+      margin-top: 3%;
+}
 /*MODAL4*/
 .m4{
       height: 100%;
@@ -218,6 +247,12 @@
       height: 80%;
       width: 80%;
       background-color: rgba(153, 153, 153, 0.596);
+}
+#nombre, #apellido, #actividad{
+      margin-top: 0.5%;
+}
+#close4{
+      margin-top: 3%;
 }
 /*MODAL5*/
 .m5{
