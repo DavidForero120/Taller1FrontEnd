@@ -297,7 +297,7 @@
       background-color: rgba(72, 78, 83, 0.514);
       align-items: center;
       height: 2em;
-}#cir, #tri, #rec, #cua{
+}#cir, #tri, #rec, #cua, #are1, #per1{
       text-decoration: none;
       border: 1px solid white; 
       color: white;
@@ -306,10 +306,110 @@
       display: flex;
       align-items: center;
       justify-content: center;
-}#cir:hover, #tri:hover, #rec:hover, #cua:hover{
+}#cir:hover, #tri:hover, #rec:hover, #cua:hover, #are1:hover, #per1:hover, #are2:hover,#are3:hover,#are4:hover, #per2:hover, #per3:hover, #per4:hover{
       transition: 1s;
       background-color: rgba(109, 117, 117, 0.705);
-      text-decoration: none;
-      
+      text-decoration: none;    
       color: black;
+}
+#are1, #per1, #are2,#are3,#are4, #per2, #per3, #per4{
+      width: 100%;
+      background-color: rgba(72, 78, 83, 0.514);
+      color: white;
+      border: 1px solid white; 
+}
+.opciones, .opciones2, .opciones3, .opciones4{
+      margin-top: 1%;
+      display: flex;
+      width: 60%;
+}
+.op1{
+      display: none;
+}
+.op2{
+      display: none;
+}
+.op3{
+      display: none;
+}
+.op4{
+      display: none;
+}
+.mostrar{
+      display: flex;
+}
+.tit5{
+      font-size: 1.8em;
+      color: aliceblue;
+      margin-bottom: 2%;
+}
+#radio, #radio1{
+      margin-bottom: 2%;
+      margin-top: 1%;
+}
+.cirArea{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2%;
+      width: 100%;
+      display: none;
+}
+.cirPerimetro{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2%;
+      width: 100%;
+      display: none;
+}
+.show1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2%;
+      width: 100%;
+}
+#Acirculo, #Pcirculo{
+      margin-bottom: 3%;
+}
+.triArea{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2%;
+      width: 100%;
+      display: none;
+}
+.triPer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2%;
+      width: 100%; 
+      display: none;
+}
+.show2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2%;
+      width: 100%; 
+}
+#base1, #altura1{
+      margin-top: 1%;
+}
+#Atriangulo{
+      margin-top: 2%;
+
+}#Ptriangulo{
+      margin-top: 2%;
+}#lad1, #lad2, #lad3, #lad4{
+      margin-top: 1%;
 }
