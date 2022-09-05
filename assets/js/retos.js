@@ -27,15 +27,35 @@ uni.addEventListener('click', ()=>{
       const calculo = palabra.charAt();
       alert(`la primera letra de "${palabra}" es "${calculo}"`);
 });
-
 /*EJERCICIO2*/
 /*CONVERTIR GRADOS*/
-
+const verify = document.getElementById('cal');
+verify.addEventListener('click', ()=>{
+      const dato = document.getElementById('grados').value;
+      const grado = document.getElementById('inf').value
+      parseInt(dato);
+      if(dato==1){       
+                  const valor = parseFloat(grado) + 273.15;
+                  alert(`los ${grado} grados celsius a kelvin son: ${valor}`)
+      }else if(dato==2){
+            const valor = (parseFloat(grado)*1.8) + 32;
+                  alert(`los ${grado} grados celsius a Fahrenheit son: ${valor}`);
+      }else if(dato == 3){
+            const valor = (parseFloat(grado)-32) * (5/9);
+            alert(`los ${grado} grados Fahrenheit a celsius son: ${valor.toFixed(2)}`);
+      }else if(dato == 4){
+            const valor = (parseFloat(grado)-32)*(5/9) + 273.15;
+            alert(`los ${grado} grados Fahrenheit a kelvin son: ${valor.toFixed(2)}`);      
+      }else if(dato == 5){
+            const valor = (parseFloat(grado)-273.15)*(9/5) + 32;
+            alert(`los ${grado} grados kelvin a Fahrenheit son: ${valor.toFixed(2)}`);  
+      }else if(dato == 6){
+            const valor = (parseFloat(grado)-273.15);
+            alert(`los ${grado} grados kelvin a celcius son: ${valor.toFixed(2)}`);  
+      }
+})
 /*EJERCICIO3*/
-
-
 const averiguar = document.getElementById('trig');
-
 averiguar.addEventListener('click',()=>{
       const lad1 = document.getElementById('lado1').value;
       const lad2 = document.getElementById('lado2').value;
@@ -47,8 +67,32 @@ averiguar.addEventListener('click',()=>{
             alert(`El triangulo es isósceles, dos lados son similares.`);
       }else{
             alert(`El triangulo es ecaleno, todos sus lados son diferentes.`);
-      }
+      }  
+})
+/*EJERCICIO4*/
+const respuesta = document.getElementById('respuesta');
+
+respuesta.addEventListener('click', ()=>{
+      const names = document.getElementById('nombre').value;
+      const secondName = document.getElementById('apellido').value;
+      const materia = document.getElementById('actividad').value;
+      parseInt(names); parseInt(secondName); parseInt(materia)
+            if(names== 1 && secondName==2 && materia==6){
+                  alert("RESPUESTA CORRECTA!!")
+            }else if(names== 2 && secondName==4 && materia==1 || materia==7){
+                  alert("RESPUESTA CORRECTA!!")
+            }else if(names== 3 && secondName==5 && materia==2){
+                  alert("RESPUESTA CORRECTA!!")
+            }else if(names== 4 && secondName==1 && materia==8){
+                  alert("RESPUESTA CORRECTA!!")
+            }else if(names== 5 && secondName==3 && materia==3){
+                  alert("RESPUESTA CORRECTA!!")
+            }else if(names== 6 && secondName==7 && materia==6){
+                  alert("RESPUESTA CORRECTA!!")
+            }else if(names== 7 && secondName==8 && materia==4){
+                  alert("RESPUESTA CORRECTA!!")
+            }else{
+                  alert("RESPUESTA INCORRECTA¡¡")
+            }
       
 })
-
-

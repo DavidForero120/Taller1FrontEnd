@@ -95,6 +95,10 @@
       color: white;
       font-size: 2em;
 }
+.btn-dark{
+      font-size: 1.2em !important;
+      width: 8em !important;
+}
 /*MODAL1*/
 .m1{
       height: 100%;
@@ -114,6 +118,7 @@
       height: 80%;
       width: 80%;
       background-color: rgba(153, 153, 153, 0.596);
+      border-radius: 15px;
 }
 .ret{
       height: 100%;
@@ -157,8 +162,8 @@
       
 }
 #close{
-      margin-right: -100%;
-      margin-top: -42.5%;
+      
+      margin-top: 3%;
       color: white;
       font-size: 2em;
 } 
@@ -187,6 +192,7 @@
       height: 80%;
       width: 80%;
       background-color: rgba(153, 153, 153, 0.596);
+      border-radius: 15px;
 }
 #cal{
       margin-top: 5%;
@@ -213,6 +219,7 @@
       height: 80%;
       width: 80%;
       background-color: rgba(153, 153, 153, 0.596);
+      border-radius: 15px;
 }
 .cambio3{
       height: 100%;
@@ -247,12 +254,16 @@
       height: 80%;
       width: 80%;
       background-color: rgba(153, 153, 153, 0.596);
+      border-radius: 15px;
 }
 #nombre, #apellido, #actividad{
       margin-top: 0.5%;
 }
 #close4{
-      margin-top: 3%;
+      margin-top: 5% !important;
+}
+#respuesta{
+      margin-top: 4%;
 }
 /*MODAL5*/
 .m5{
@@ -273,4 +284,32 @@
       height: 80%;
       width: 80%;
       background-color: rgba(153, 153, 153, 0.596);
+      border-radius: 15px;
+}
+.opc{
+      border: 1px solid white; 
+      border-radius: 5px;
+      margin-top: 1%;
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: rgba(72, 78, 83, 0.514);
+      align-items: center;
+      height: 2em;
+}#cir, #tri, #rec, #cua{
+      text-decoration: none;
+      border: 1px solid white; 
+      color: white;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}#cir:hover, #tri:hover, #rec:hover, #cua:hover{
+      transition: 1s;
+      background-color: rgba(109, 117, 117, 0.705);
+      text-decoration: none;
+      
+      color: black;
 }
