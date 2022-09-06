@@ -77,9 +77,12 @@ cir.addEventListener('click',()=>{
       opc2.classList.replace('mostrar','op2');
       opc3.classList.replace('mostrar','op3');
       opc4.classList.replace('mostrar','op4');
-
       perimetroTriangulo.classList.replace('show2','triPer');
       areaTriangulo.classList.replace('show2','triArea');
+      pRec.classList.replace('show3','periRec');
+      ARec.classList.replace('show3','areaRec');
+      arcu2.classList.replace('show4','periCua');
+      arcu.classList.replace('show4','areaCua');
 });
 /*------------*/
 const tri = document.getElementById('tri');
@@ -89,40 +92,46 @@ tri.addEventListener('click',()=>{
       opc2.classList.replace('op2','mostrar');
       opc3.classList.replace('mostrar','op3');
       opc4.classList.replace('mostrar','op4');
-
       areaC.classList.replace('show1','cirArea');
       perimetroC.classList.replace('show1','cirPerimetro');
+      pRec.classList.replace('show3','periRec');
+      ARec.classList.replace('show3','areaRec');
+      arcu2.classList.replace('show4','periCua');
+      arcu.classList.replace('show4','areaCua');
       
 });
 /*-----------*/
 const rec = document.getElementById('rec');
 const opc3 = document.getElementById('opciones3')
-rec.addEventListener('click',()=>{
+      rec.addEventListener('click',()=>{
       opc1.classList.replace('mostrar','op1');
       opc2.classList.replace('mostrar','op2');
       opc3.classList.replace('op3','mostrar');
       opc4.classList.replace('mostrar','op4');
-
       areaC.classList.replace('show1','cirArea');
       perimetroC.classList.replace('show1','cirPerimetro');
-
       perimetroTriangulo.classList.replace('show2','triPer');
       areaTriangulo.classList.replace('show2','triArea');
+      pRec.classList.replace('show3','periRec');
+      ARec.classList.replace('show3','areaRec');
+      arcu2.classList.replace('show4','periCua');
+      arcu.classList.replace('show4','areaCua');
 });
 /*-----------*/
 const cua = document.getElementById('cua');
 const opc4 = document.getElementById('opciones4')
-cua.addEventListener('click',()=>{
+      cua.addEventListener('click',()=>{
       opc1.classList.replace('mostrar','op1');
       opc2.classList.replace('mostrar','op2');
       opc3.classList.replace('mostrar','op3');
       opc4.classList.replace('op4','mostrar');
-
       areaC.classList.replace('show1','cirArea');
       perimetroC.classList.replace('show1','cirPerimetro');
-
+      ARec.classList.replace('show3','areaRec');
       perimetroTriangulo.classList.replace('show2','triPer');
       areaTriangulo.classList.replace('show2','triArea');
+      pRec.classList.replace('show3','periRec');
+
 });
 
 /*---CIRCULO---*/
@@ -132,7 +141,6 @@ areC.addEventListener('click', ()=>{
       areaC.classList.replace('cirArea','show1');
       perimetroC.classList.replace('show1','cirPerimetro');
 });
-
 const perC = document.getElementById('per1');
 const perimetroC = document.getElementById('cirPerimetro');
 perC.addEventListener('click',()=>{
@@ -153,3 +161,29 @@ areaP.addEventListener('click',()=>{
       areaTriangulo.classList.replace('show2','triArea');
 });
 /*---RECTANGULO---*/
+const rectan = document.getElementById('are3');
+const ARec = document.getElementById('areaRec');
+rectan.addEventListener('click',()=>{
+      ARec.classList.replace('areaRec','show3');
+      pRec.classList.replace('show3','periRec');
+});
+const rectan1 = document.getElementById('per3');
+const pRec = document.getElementById('periRec');
+rectan1.addEventListener('click',()=>{
+      pRec.classList.replace('periRec','show3');
+      ARec.classList.replace('show3','areaRec');
+});
+/*---CUADRADO---*/
+const ar = document.getElementById('are4');
+const arcu = document.getElementById('areaCua');
+ar.addEventListener('click',()=>{
+      arcu.classList.replace('areaCua','show4');
+      arcu2.classList.replace('show4','periCua');
+})
+const ar2 = document.getElementById('per4');
+const arcu2= document.getElementById('periCua');
+ar2.addEventListener('click',()=>{
+      arcu2.classList.replace('periCua','show4');
+      arcu.classList.replace('show4','areaCua');
+});
+

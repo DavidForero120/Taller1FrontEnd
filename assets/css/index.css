@@ -413,3 +413,121 @@
 }#lad1, #lad2, #lad3, #lad4{
       margin-top: 1%;
 }
+.areaRec{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3%;
+      display: none;
+}#basi, #alt,#basi2, #alt2{
+      margin-top: 1%;
+}#Arectangulo , #Prectangulo, #ArecCuadra, #PreCuadra{
+      margin-top: 2%;
+      margin-bottom: 2%;
+}
+.areaCua{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3%;  
+      display: none;
+}
+.show4{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3%;
+}
+.periRec{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3%;
+      display: none;
+}
+.periCua{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3%;  
+      display: none;
+}
+.show3{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3%;
+}
+
+@media screen and (min-width: 320px) and (max-width:520px) {
+      .cont1 h1{
+            display: none;
+      }.cont1 img{
+            width: 50%;
+      }.cont1{
+            padding:  5%;
+      }.retos{
+            margin-top: 5%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+      }#ejer1, #ejer2, #ejer3, #ejer4, #ejer5{
+            width: 40%;
+            height: 2em;
+            font-size: 1em;
+      }#ejer{
+            grid-column: 1/61;
+            grid-row: 5/15;
+      }#pestana{
+            grid-column: 1/61;
+            grid-row: 18/60;
+            background-color: rgba(78, 74, 74, 0.815);
+            border: 5px solid rgb(255, 255, 255);          
+      }.modal1, .modal2, .modal3,.modal4, .modal5{
+            width: 100%;
+            height: 90%;
+      }.tit{
+            font-size: 1.3em;
+            text-align: center;
+            margin-top: 2%;
+      }.texto button{
+            height: 3em;
+            align-items: center;
+            justify-content: center;
+      }.texto label{
+            font-size: 1.2em;
+      }.ret{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+      }.ret .tit{
+            margin-top: 5%;
+            margin-bottom: 5%;
+            font-size: 1.8em;
+            text-align: center;
+      }#grados, #inf{
+            margin: 10%;
+            width: 60% !important;
+      }#lado1, #lado2, #lado3{
+            margin-top: 2%;
+            width: 70% !important;
+      }#nombre, #apellido, #actividad{
+            margin-top: 3%;
+            width: 70% !important;
+      }#respuesta{
+            margin-top: 5%;
+      }
+}
