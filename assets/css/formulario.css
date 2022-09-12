@@ -1,0 +1,17 @@
+.formulario{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2%;
+}
+.formulario div{
+      display: flex;
+      flex-direction: column;
+      margin-top: 5%;
+}
+h1{
+      display: flex;
+      justify-content: center;
+      padding: 1%;
+}
