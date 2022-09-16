@@ -66,7 +66,7 @@ averiguar.addEventListener('click',()=>{
       }else if(lad1==lad2 || lad2==lad3 || lad1==lad3){
             alert(`El triangulo es isósceles, dos lados son similares.`);
       }else{
-            alert(`El triangulo es ecaleno, todos sus lados son diferentes.`);
+            alert(`El triangulo es escaleno, todos sus lados son diferentes.`);
       }  
 })
 /*EJERCICIO4*/
@@ -122,16 +122,13 @@ triP.addEventListener('click', ()=>{
       const a = parseFloat(lado)+parseFloat(lad)+parseFloat(lad1);
       alert(`El perimetro del triangulo es: ${a}`);  
 });
-
 const recArea = document.getElementById('Arectangulo');
 recArea.addEventListener('click', ()=>{
       const bas1 = document.getElementById('bas').value;
       const alt1 = document.getElementById('alt').value;
-      
       r= parseFloat(bas1) * parseFloat(alt1);
       alert(`La base del rectangulo es: ${r}`);
 });
-
 const recPeri = document.getElementById('Prectangulo');
 recPeri.addEventListener('click', ()=>{
       const bas2 = document.getElementById('bas2').value;
@@ -140,19 +137,15 @@ recPeri.addEventListener('click', ()=>{
       r= (parseFloat(bas2)*2) +(parseFloat(alt2)*2);
       alert(`El perimetro del rectangulo es: ${r}`);
 })
-
-
 const cuadAre = document.getElementById('ArecCuadra');
 cuadAre.addEventListener('click',()=>{
       const ladC = document.getElementById('basi').value;
       const f = parseFloat(ladC)* parseFloat(ladC);
-      alert(`El area del cuadrado es: ${f}`)
-      
+      alert(`El area del cuadrado es: ${f}`)     
 })
 const cuadPer = document.getElementById('PreCuadra');
 cuadPer.addEventListener('click',()=>{
       const ladC = document.getElementById('basi2').value;
       const f = parseFloat(ladC)+ parseFloat(ladC)+parseFloat(ladC)+ parseFloat(ladC);
-      alert(`El perimetro del cuadrado es: ${f}`)
-      
+      alert(`El perimetro del cuadrado es: ${f}`)      
 })

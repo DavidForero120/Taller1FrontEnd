@@ -15,3 +15,31 @@ h1{
       justify-content: center;
       padding: 1%;
 }
+button, input{
+      border-radius: 5px;
+      border: 1px solid gray;
+}
+button{
+      background-color: black;
+      color: white;
+}
+
+.correct{
+      border: 2px solid green;
+    
+}
+.incorrect{
+      border: 2px solid red;
+}
+p{
+      height: 1px;
+      margin-bottom: 7% ;
+
+}.error1,.error2,.error3,.error4,.error5,.error6{
+      display: none;
+}.termino{
+      margin-top: 10%;
+}
+.exito{
+      display:none
+}

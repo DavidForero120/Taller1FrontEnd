@@ -12,10 +12,10 @@
       <h1>Registro de usuario</h1>
 
 <div class="formulario" id="formulario">
-      <form id="Jvalidaciones" action="">
+      <form id="Jvalidaciones" action="validacion">
             <div>
-            <label for="documento">Tipo de documento:</label>
-            <select name="documento" id="documento" class="form-select" size="1">
+            <label for="tipoDocumento">Tipo de documento:</label>
+            <select name="tipoDocumento" id="tipoDocumento" class="form-select" size="1">
                   <option value="1">Cédula</option>
                   <option value="2">Tarjeta identidad</option>
                   <option value="3">Otro</option>
@@ -23,37 +23,44 @@
             </div>
             <div>
             <label for="" >Número de documento:</label>
-            <input type="text" placeholder="Documento">
+            <input class="docu" id="docu" type="text" placeholder="Documento">
+            <p id="error1" class="error1">El campo solo admite numeros, minimo 3 y maximo 11</p>
       </div>
       <div>
             <label for="">Nombre:</label>
-            <input type="text" placeholder="Nombre">
+            <input class="nombre" id="nombre" type="text" placeholder="Nombre">
+            <p id="error2" class="error2">El campo solo acepta letras, minimo 4 letras</p>
       </div>
       <div>
             <label for="">Apellido:</label>
-            <input type="text" placeholder="Apellido">
+            <input class="apellido id="apellido" type="text" placeholder="Apellido">
+            <p id="error3" class="error3">El campo solo acepta letras, minimo 4 letras</p>
       </div>
       <div>
             <label for="">Fecha de nacimiento:</label>
-            <input type="text" placeholder="Fecha">
+            <input class="fecha" id="fecha" type="date" placeholder="Fecha">
       </div>
       <div>
             <label for="">Correo:</label>
-            <input type="text" placeholder="Correo">
+            <input class="correo" id="correo" type="text" placeholder="Correo">
+            <p id="error4" class="error4">Debe ser un correo valido</p>
       </div>
       <div>
             <label for="">Contraseña:</label>
-            <input type="password" >
+            <input class="password" id="password" type="password" >
+            <p id="error5" class="error5">Minimo 4 caracteres</p>
       </div>
       <div>
             <label for="">Confirmar contraseña:</label>
-            <input type="password">
+            <input class="password2" id="password2" type="password">
+            <p id="error6" class="error6">La contraseña debe conicidir</p>
       </div>  
-            <input type="checkbox">Aceptar términos de uso       
+            <input type="checkbox" id="termino" class="termino">Aceptar términos de uso       
       <div>
-            <button>Confirmar</button>      
+            <button type="submit">Confirmar</button>      
       </div>
       </form>
 </div>
+ <script src="/assets/js/validaciones.js"></script>
 </body>
 </html>
