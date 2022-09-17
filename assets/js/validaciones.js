@@ -112,10 +112,10 @@ inputs.forEach((input)=>{
         e.preventDefault();
         const terminos = document.getElementById('termino');
         if(comprobar.documento && comprobar.nombre && comprobar.apellido && comprobar.correo && comprobar.contrasena && terminos.checked ){
-            form.reset();
+            
             document.getElementById('exito').classList.add('succes');
             document.getElementById('uError').classList.remove('Perror');
-     
+            form.reset();
         }else{
             document.getElementById('uError').classList.add('Perror');
             document.getElementById('exito').classList.remove('succes');
