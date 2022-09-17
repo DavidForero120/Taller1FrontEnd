@@ -16,9 +16,7 @@
       <div>
             <label for="tipoDocumento">Tipo de documento:</label>
             <select name="tipoDocumento" id="tipoDocumento" class="form-select" size="1">
-                  <option value="0">Elija un tipo de documento</option>
-                  <option value="1">Cédula</option>
-                  <option value="2">Tarjeta identidad</option>
+                  <option value="1">Cédula</option>  
                   <option value="3">Otro</option>
             </select>
       </div>
@@ -39,7 +37,8 @@
       </div>
       <div>
             <label for="">Fecha de nacimiento:</label>
-            <input name="fecha" class="fecha" id="fecha" type="date" placeholder="Fecha">
+            <input name="fecha" class="fecha" id="fecha" type="date" placeholder="Fecha"  min="1930-01-01" max="2016-01-01">
+            <p id="error8" class="error8">Debe ser una fecha valida, mayor de edad</p>
       </div>
       <div>
             <label for="">Correo:</label>

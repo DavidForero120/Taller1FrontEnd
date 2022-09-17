@@ -15,8 +15,8 @@ const comprobar ={
     nombre: false,
     apellido: false,
     correo: false,
-    contrasena:false
-    
+    contrasena:false, 
+    fecha: false
 }
 /*Funcion para validar los inputs recorridos*/
 const validarForm = (e)=>{
@@ -28,10 +28,12 @@ const validarForm = (e)=>{
             document.getElementById('error1').classList.remove('error');
             document.getElementById('docu').classList.add('correct');
             document.getElementById('docu').classList.remove('incorrect');
+            comprobar['documento'] = true;
         }else{
             document.getElementById('error1').classList.add('error');
             document.getElementById('docu').classList.add('incorrect');
             document.getElementById('docu').classList.remove('correct');
+            comprobar['documento'] = false;
         }  
     break;
     case "nombre":
@@ -39,10 +41,12 @@ const validarForm = (e)=>{
             document.getElementById('error2').classList.remove('error');
             document.getElementById('nombre').classList.add('correct');
             document.getElementById('nombre').classList.remove('incorrect');
+            comprobar['nombre'] = true;
         }else{
             document.getElementById('error2').classList.add('error');
             document.getElementById('nombre').classList.add('incorrect');
             document.getElementById('nombre').classList.remove('correct');
+            comprobar['nombre'] = false;
         }
     break;
     case "apellido":
@@ -50,10 +54,12 @@ const validarForm = (e)=>{
             document.getElementById('error3').classList.remove('error');
             document.getElementById('apellido').classList.add('correct');
             document.getElementById('apellido').classList.remove('incorrect');
+            comprobar['apellido'] = true;
         }else{
             document.getElementById('error3').classList.add('error');
             document.getElementById('apellido').classList.add('incorrect');
             document.getElementById('apellido').classList.remove('correct');
+            comprobar['apellido'] = false;
         }
     break;
    
@@ -62,10 +68,12 @@ const validarForm = (e)=>{
             document.getElementById('error4').classList.remove('error');
             document.getElementById('correo').classList.add('correct');
             document.getElementById('correo').classList.remove('incorrect');
+            comprobar['correo'] = true;
         }else{
             document.getElementById('error4').classList.add('error');
             document.getElementById('correo').classList.add('incorrect');
             document.getElementById('correo').classList.remove('correct');
+            comprobar['correo'] = false;
         }
     break;
     case "password":
@@ -73,15 +81,39 @@ const validarForm = (e)=>{
             document.getElementById('error5').classList.remove('error');
             document.getElementById('password').classList.add('correct');
             document.getElementById('password').classList.remove('incorrect');
+            comprobar['contrasena'] = true;
         }else{
             document.getElementById('error5').classList.add('error');
             document.getElementById('password').classList.add('incorrect');
             document.getElementById('password').classList.remove('correct');
+            comprobar['contrasena'] = false;
         }
     break;
     case "password2":
         validarP();
     break;
+    case "fecha":
+        /*fecha actual */
+        let fechaA = new Date();
+        const ano =  parseInt(fechaA.getFullYear());
+        /*FECHA DEL INPUT Y TRAERLA POR DATOS */
+        const fechaN = document.getElementById('fecha').value;
+        const anoNaci = parseInt(String(fechaN).substring(0,4));
+        let edad = ano - anoNaci;
+        parseInt(edad);
+
+        console.log(edad);
+        if(ano > 1930 && edad > 17 && edad < 100){
+            document.getElementById('error8').classList.remove('error');
+            document.getElementById('error8').classList.add('correct');
+            document.getElementById('error8').classList.remove('incorrect');
+            comprobar['fecha'] = true;
+        }else{
+            document.getElementById('error8').classList.add('error');
+            document.getElementById('error8').classList.remove('correct');
+            document.getElementById('error8').classList.add('incorrect');
+            comprobar['fecha'] = false;
+        }
     }
 }
 
@@ -93,10 +125,12 @@ const validarP = ()=>{
         document.getElementById('error6').classList.remove('error');
         document.getElementById('password2').classList.add('correct');
         document.getElementById('password2').classList.remove('incorrect');
+        comprobar['contrasena'] = true;
     }else{
         document.getElementById('error6').classList.add('error');
         document.getElementById('password2').classList.add('incorrect');
         document.getElementById('password2').classList.remove('correct');
+        comprobar['contrasena'] = false;
     }
 }
 /*Recorrer todos los inputs del formulario*/
@@ -111,7 +145,7 @@ inputs.forEach((input)=>{
         //e= evento
         e.preventDefault();
         const terminos = document.getElementById('termino');
-        if(comprobar.documento && comprobar.nombre && comprobar.apellido && comprobar.correo && comprobar.contrasena && terminos.checked ){
+        if(comprobar.documento && comprobar.nombre && comprobar.apellido && comprobar.contrasena && comprobar.correo && comprobar.fecha && terminos.checked ){
             
             document.getElementById('exito').classList.add('succes');
             document.getElementById('uError').classList.remove('Perror');
@@ -121,7 +155,8 @@ inputs.forEach((input)=>{
             document.getElementById('exito').classList.remove('succes');
         }
     });
-
+    
+    
 
 const bot = document.getElementById('t');
 bot.addEventListener('click',()=>{
