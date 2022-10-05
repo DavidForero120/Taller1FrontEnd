@@ -58,8 +58,11 @@
       width: 10%;
       font-size: 1.2em;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}#ejerF a{
+      text-decoration: none;
+      color: white;
 }
-#ejer2, #ejer4{
+#ejer2, #ejer4, #ejerF{
       background-color: black;
       color: white;
       height: 50%;
@@ -485,7 +488,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             
-      }#ejer1, #ejer2, #ejer3, #ejer4, #ejer5{
+      }#ejer1, #ejer2, #ejer3, #ejer4, #ejer5, #ejerF{
             width: 40%;
             height: 2em;
             font-size: 1em;
@@ -570,7 +573,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             
-      }#ejer1, #ejer2, #ejer3, #ejer4, #ejer5{
+      }#ejer1, #ejer2, #ejer3, #ejer4, #ejer5, #ejerF{
             width: 35%;
             height: 2.5em;
             font-size: 1.2em;
@@ -657,7 +660,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             
-      }#ejer1, #ejer2, #ejer3, #ejer4, #ejer5{
+      }#ejer1, #ejer2, #ejer3, #ejer4, #ejer5, #ejerF{
             width: 35%;
             height: 2.5em;
             font-size: 1.2em;
@@ -732,10 +735,10 @@
       }
 }
 @media screen and (min-width: 721px) and (max-width: 1024px) {
-      #ejer1, #ejer2, #ejer3, #ejer4, #ejer5{
-            width: 16%;
-            height: 2.5em;
-            font-size: 1.2em;
+      #ejer1, #ejer2, #ejer3, #ejer4, #ejer5, #ejerF{
+            width: 12%;
+            height: 2em;
+            font-size: 1em;
       }#ejer{
             grid-column: 1/61;
             grid-row: 10/12;
